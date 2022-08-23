@@ -4,11 +4,6 @@ on:
     pull_request: branches:[ master ]
 
 jobs:
-    name: Automat
-    runs-on: ubuntu-latest
-    steps:
-        - uses: actions/checkout@v3
-        - name: Lint Actions
-          uses: wearerequired/lint-action@v2
-        - name: Run ESLint
-          run: npm run lint
+    - name: Lint Action
+  uses: wearerequired/lint-action@v2.0.1
+
