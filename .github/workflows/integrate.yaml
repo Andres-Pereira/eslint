@@ -7,17 +7,16 @@ jobs:
     name: Automat
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Lint Actions
-      uses: wearerequired/lint-action@v2
-        with:
-            auto_fix: true
-            eslint: true
-            prettier: true
-            eslint_dir: src/
-            prettier_dir: src/
-            eslint_auto_fix: true
-            prettier_auto_fix: true
-              
-    - name: Run ESLint
-      run: npm run lint
+        - uses: actions/checkout@v3
+        - name: Lint Actions
+          uses: wearerequired/lint-action@v2
+          with:
+              auto_fix: true
+              eslint: true
+              prettier: true
+              eslint_dir: src/
+              prettier_dir: src/
+              eslint_auto_fix: true
+              prettier_auto_fix: true
+        - name: Run ESLint
+          run: npm run lint
