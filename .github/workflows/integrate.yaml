@@ -18,10 +18,6 @@ jobs:
               with:
                   node-version: 18
 
-            - name: Install Dependencies
-
-              run: npm ci
-
             - name: Run linters with errors
 
               uses: wearerequired/lint-action@v2
