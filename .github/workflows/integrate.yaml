@@ -1,9 +1,11 @@
-name: integracion continua eslint
+name: integracion continua
 
 on:
     pull_request: branches:[ master ]
 
 jobs:
-    - name: Lint Action
-  uses: wearerequired/lint-action@v2.0.1
-
+    lint_prettier:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Lint Action
+            - uses: wearerequired/lint-action@v2.0.1
