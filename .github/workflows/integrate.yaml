@@ -22,11 +22,13 @@ jobs:
 
               run: npm install
 
-            - name: Install Eslint and Prettier
+            - name: Install Eslint
 
               run: npm install -g eslint
 
-              run: npm i -g prettier 
+            - name: Install Prettier
+
+              run: npm i -g prettier
 
             - name: Run linters with errors
 
